@@ -1,0 +1,12 @@
+{
+  "extends": "hardcore-react",
+  "parser": "babel-eslint",
+  "rules": {
+    "fp/no-mutation": ["error", {"allowThis": true, "exceptions": [{"property": "propTypes"}, {"property": "contextTypes"}]}],
+    "react/no-multi-comp": 0,
+  },
+  "globals": {
+    "expect": true,
+    "sinon": true
+  }
+}
